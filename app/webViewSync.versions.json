@@ -1,0 +1,52 @@
+{
+  "tut-occupancy" : {
+    "/webcomponents-lite.min.js" : {
+      "version" : "0.0.96",
+      "lastModified" : 1551338235230,
+      "metaId" : 14912449,
+      "fileId" : "(dev=1000004,ino=10706460)"
+    },
+    "/esri_placeholder.png" : {
+      "version" : "0.0.73",
+      "lastModified" : 1551338235227,
+      "metaId" : 14912806,
+      "fileId" : "(dev=1000004,ino=10706459)"
+    },
+    "/leaflet.css" : {
+      "version" : "0.0.107",
+      "lastModified" : 1551338235231,
+      "metaId" : 14912389,
+      "fileId" : "(dev=1000004,ino=10706461)"
+    },
+    "/tut-occupancy-styles.html" : {
+      "version" : "0.0.159",
+      "lastModified" : 1551338235221,
+      "metaId" : 14910927,
+      "fileId" : "(dev=1000004,ino=10706456)"
+    },
+    "/leaflet-map.html" : {
+      "version" : "0.0.101",
+      "lastModified" : 1551338235222,
+      "metaId" : 14912415,
+      "fileId" : "(dev=1000004,ino=10706457)"
+    },
+    "/leaflet-marker.html" : {
+      "version" : "0.0.99",
+      "lastModified" : 1551338235232,
+      "metaId" : 14912430,
+      "fileId" : "(dev=1000004,ino=10706462)"
+    },
+    "/tut-occupancy.html" : {
+      "version" : "0.0.470",
+      "lastModified" : 1551498699821,
+      "metaId" : 14910869,
+      "fileId" : "(dev=1000004,ino=10706458)"
+    },
+    "/leaflet.js" : {
+      "version" : "0.0.108",
+      "lastModified" : 1551338235214,
+      "metaId" : 14912384,
+      "fileId" : "(dev=1000004,ino=10706455)"
+    }
+  }
+}
