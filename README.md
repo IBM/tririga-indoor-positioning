@@ -7,11 +7,11 @@
 Consider using cloud functions as a backend, persist token and other variables as params or in cloudant -->
 
 <!-- Add a new Title and fill in the blanks -->
-# IoT - Integrate an Indoor Positioning System using TRIRIGA
+# IoT - Integrate an Indoor Positioning System with TRIRIGA
 
 In this Code Pattern, we'll demonstrate how to build and deploy a custom perceptive application within a TRIRIGA instance. This perceptive application demonstrates how to render and update interactive floor plans from TRIRIGA, and to pull data from the Weather Company API. We also demonstrate how to deploy an indoor positioning system to render markers on the floor plan indicating the location of each user. The positioning system works by measuring the signal strength of all WiFi routers within the area.
 
-This Pattern is a continuation of the previous "tririga-occupancy" project [here](https://github.com/IBM/tririga-occupancy). If you have previously completed that pattern, you can skip steps 1-3 here.
+This Pattern is a continuation of the previous "tririga-occupancy" project [here](https://github.com/IBM/tririga-occupancy). If you have previously completed that pattern, you can skip steps 1-3 in this one.
 
 TRIRIGA is a system used to monitor enterprise facilities by integrating data from real estate portfolios, construction projects, workplace assets, etc. We can extend the TRIRIGA capabilities with custom business logic by deploying a "Perceptive Application". A [Perceptive App](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/IBM%20TRIRIGA1/page/What%20are%20Perceptive%20apps) is a dynamic, custom application built using the TRIRIGA UX Framework. This is structured as a model-view-controller (MVC) architecture. The application "View" is built using the [Polymer](https://www.polymer-project.org/) library, which makes it simple to create an interactive dashboard using modular [web components](https://www.webcomponents.org/introduction). Web components can provide visual elements such as graphs, maps, images, and so on. Each component can be rendered by data pulled from internal TRIRIGA reports and/or API data from other offerings (Building Insights, Weather Company).
 
@@ -23,18 +23,22 @@ When the reader has completed this Code Pattern, they will understand how to:
 - Design and publish a customized Polymer application to a TRIRIGA instance
 - Pull data from the Weather Company API
 - Import Building Floor Plans from TRIRIGA
-- Detect user proximity to certain locations in workplace
+- Deploy indoor positioning system using Raspberry Pis and [FIND](https://github.com/schollz/find-lf)
+- Visualize user location in perceptive app
 
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
 1. Perceptive app pulls Floor Plan(s) from TRIRIGA, and data from Weather Company API.
 2. Mobile device periodically measures signal strength of all WiFi endpoints in the area, and forwards measurements to indoor positioning system (Raspberry Pis)
-3. Mobile device position is estimated, and location is updated on Floor Plan
+3. Mobile device position is estimated, and location is updated in Cloudant and then rendered on Floor Plan
 <!-- 2. Node.js backend requests updated dataset from BI APIs every hour, and persists values into a Cloudant database. This allows for us to build a chronological hourly dataset which can be used to create custom analytics models/graphics.
 3. Node.js backend transforms data into required format for charts/graphs.
 4. Custom TRIRIGA app pulls formatted sensor data from Node.js backend, and renders graphics and tables. -->
 
-![Architecture](/images/arch.png)
+<!-- ![Architecture](/images/arch.png) -->
+<p align="center">
+<img src="https://i.imgur.com/Rg0zgOA.png"/>
+</p>
 
 <!-- <p align="center">
 <img src="https://i.imgur.com/lTR8fH6.png" height="500" width="800" />
@@ -332,7 +336,7 @@ TIME=10
 docker exec scanner sh -c "find3-cli-scanner -i ${NET_INTERFACE} -device ${DEVICE} -family dev -server https://cloud.internalpositioning.com -scantime ${TIME} -bluetooth -location ${LOCATION}"
 ```
 
-After training one or more locations, the location of a given device can then be estimated by running the following command
+After training one or more locations, the location of a given device can then be estimated by running the following command.
 ```
 docker exec scanner sh -c "find3-cli-scanner -i ${NET_INTERFACE} \
     -device ${DEVICE} -family dev \
