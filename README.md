@@ -7,28 +7,32 @@
 Consider using cloud functions as a backend, persist token and other variables as params or in cloudant -->
 
 <!-- Add a new Title and fill in the blanks -->
-# IoT - Integrate a TRIRIGA Perceptive App with Building Insights APIs
+# IoT - Integrate an Indoor Positioning System using TRIRIGA
 
-In this Code Pattern, we'll demonstrate how to build a custom Perceptive Application within a TRIRIGA instance.
+In this Code Pattern, we'll demonstrate how to build and deploy a custom perceptive application within a TRIRIGA instance. This perceptive application demonstrates how to render and update interactive floor plans from TRIRIGA, and to pull data from the Weather Company API. We also demonstrate how to deploy an indoor positioning system to render markers on the floor plan indicating the location of each user. The positioning system works by measuring the signal strength of all WiFi routers within the area.
+
+This Pattern is a continuation of the previous "tririga-occupancy" project [here](https://github.com/IBM/tririga-occupancy). If you have previously completed that pattern, you can skip steps 1-3 here.
 
 TRIRIGA is a system used to monitor enterprise facilities by integrating data from real estate portfolios, construction projects, workplace assets, etc. We can extend the TRIRIGA capabilities with custom business logic by deploying a "Perceptive Application". A [Perceptive App](https://www.ibm.com/developerworks/community/wikis/home?lang=en#!/wiki/IBM%20TRIRIGA1/page/What%20are%20Perceptive%20apps) is a dynamic, custom application built using the TRIRIGA UX Framework. This is structured as a model-view-controller (MVC) architecture. The application "View" is built using the [Polymer](https://www.polymer-project.org/) library, which makes it simple to create an interactive dashboard using modular [web components](https://www.webcomponents.org/introduction). Web components can provide visual elements such as graphs, maps, images, and so on. Each component can be rendered by data pulled from internal TRIRIGA reports and/or API data from other offerings (Building Insights, Weather Company).
 
 The project dependencies (Polymer, Web Components, UX Framework) are all pre-installed within the TRIRIGA instance. Additional third-party dependencies can be uploaded along with the project code.
 
-The Building Insights service provides APIs to retrieve real time occupancy/energy sensor data, as well as an analytics engine to perform prediction and anomalies. Our solution demonstrates a way to integrate the Building Insights analytics engine and data into TRIRIGA. This is achieved by using a deploying a Node.js backend on Kubernetes to periodically make REST calls to the available APIs. As data is retrieved, it is then cached in a Cloudant Database.
+<!-- The Building Insights service provides APIs to retrieve real time occupancy/energy sensor data, as well as an analytics engine to perform prediction and anomalies. Our solution demonstrates a way to integrate the Building Insights analytics engine and data into TRIRIGA. This is achieved by using a deploying a Node.js backend on Kubernetes to periodically make REST calls to the available APIs. As data is retrieved, it is then cached in a Cloudant Database. -->
 
 When the reader has completed this Code Pattern, they will understand how to:
 - Design and publish a customized Polymer application to a TRIRIGA instance
 - Pull data from the Weather Company API
 - Import Building Floor Plans from TRIRIGA
-<!-- - Detect user proximity to certain zones in workplace  -->
+- Detect user proximity to certain locations in workplace
 
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
-1. Building Insights (BI) instance publishes hourly sensor data.
-2. Node.js backend requests updated dataset from BI APIs every hour, and persists values into a Cloudant database. This allows for us to build a chronological hourly dataset which can be used to create custom analytics models/graphics.
+1. Perceptive app pulls Floor Plan(s) from TRIRIGA, and data from Weather Company API.
+2. Mobile device periodically measures signal strength of all WiFi endpoints in the area, and forwards measurements to indoor positioning system (Raspberry Pis)
+3. Mobile device position is estimated, and location is updated on Floor Plan
+<!-- 2. Node.js backend requests updated dataset from BI APIs every hour, and persists values into a Cloudant database. This allows for us to build a chronological hourly dataset which can be used to create custom analytics models/graphics.
 3. Node.js backend transforms data into required format for charts/graphs.
-4. Custom TRIRIGA app pulls formatted sensor data from Node.js backend, and renders graphics and tables.
+4. Custom TRIRIGA app pulls formatted sensor data from Node.js backend, and renders graphics and tables. -->
 
 ![Architecture](/images/arch.png)
 
@@ -47,6 +51,8 @@ When the reader has completed this Code Pattern, they will understand how to:
 2. [Register Application In TRIRIGA Dashboard](#2-generate-application-in-tririga-dashboard)
 3. [Deploy Node.js application](#3-deploy-nodejs-application)
 4. [Push Perceptive App to TRIRIGA](#4-push-perceptive-app-to-tririga)
+5. [Deploy positioning system](#5-deploy-positioning-system)
+
 
 ## Install Prerequisites:
 ### IBM Cloud CLI
@@ -300,6 +306,7 @@ And the weather forecast is rendered like so.
 <img src="https://i.imgur.com/5fMtFzE.png" height="500" width="800" />
 </p>
 
+### 5. Deploy positioning system
 
 Next, we can continue on to utilize an open source Indoor Positioning system called [find](https://github.com/schollz/find3). This solution works by measuring the signal strength of WiFi and Bluetooth sources to determine the approximate location of a device. To begin training a model associated with a specific room, we can install the library by running the following steps.
 
@@ -354,4 +361,3 @@ https://www.youtube.com/watch?v=69QPCkQNsJ8
 This code pattern is licensed under the Apache License, Version 2. Separate third-party code objects invoked within this code pattern are licensed by their respective providers pursuant to their own separate licenses. Contributions are subject to the [Developer Certificate of Origin, Version 1.1](https://developercertificate.org/) and the [Apache License, Version 2](https://www.apache.org/licenses/LICENSE-2.0.txt).
 
 [Apache License FAQ](https://www.apache.org/foundation/license-faq.html#WhatDoesItMEAN)
-
