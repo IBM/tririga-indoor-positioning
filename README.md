@@ -19,12 +19,12 @@ The project dependencies (Polymer, Web Components, UX Framework) are all pre-ins
 
 <!-- The Building Insights service provides APIs to retrieve real time occupancy/energy sensor data, as well as an analytics engine to perform prediction and anomalies. Our solution demonstrates a way to integrate the Building Insights analytics engine and data into TRIRIGA. This is achieved by using a deploying a Node.js backend on Kubernetes to periodically make REST calls to the available APIs. As data is retrieved, it is then cached in a Cloudant Database. -->
 
-When the reader has completed this Code Pattern, they will understand how to:
+<!-- When the reader has completed this Code Pattern, they will understand how to:
 - Design and publish a customized Polymer application to a TRIRIGA instance
 - Pull data from the Weather Company API
 - Import Building Floor Plans from TRIRIGA
 - Deploy indoor positioning system using Raspberry Pis and [FIND](https://github.com/schollz/find-lf)
-- Visualize user location in perceptive app
+- Visualize user location in perceptive app -->
 
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
@@ -50,7 +50,6 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 # Steps
 
-<!-- there are MANY updates necessary here, just screenshots where appropriate -->
 1. [Deploy Cloud Services](#1-deploy-cloud-services)
 2. [Register Application In TRIRIGA Dashboard](#2-generate-application-in-tririga-dashboard)
 3. [Deploy Node.js application](#3-deploy-nodejs-application)
@@ -115,7 +114,7 @@ nvm use 8.9.0
 # Steps
 <!-- Use the ``Deploy to IBM Cloud`` instructions **OR** create the services and run locally. -->
 
-### 1. Provision Watson services via IBM Cloud and IBM Marketplace dashboards
+### 1. Provision services via IBM Cloud and IBM Marketplace dashboards
 
 Create the following services:
 * [**TRIRIGA**](https://www.ibm.com/us-en/marketplace/ibm-tririga)
@@ -280,7 +279,7 @@ Next, select one of the floor IDs. This ID can then be placed in the line with t
 If the record has an associated graphic, we should see a floor plan at the very top of the application like so.
 
 <p align="center">
-<img src="https://i.imgur.com/jEmw2B3.png" height="500" width="800" />
+<img src="https://i.imgur.com/mG05VdT.png" height="500" width="800" />
 </p>
 
 Next, if we scroll down a bit further, we'll also see a series of cards showing the weather forecast for the following 10 hours. These calls require several environment variables to be exported: Weather API Username, Weather API Password, Longitude and Latitude. The weather data is retrieved by the function below.

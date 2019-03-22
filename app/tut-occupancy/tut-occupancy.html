@@ -20,6 +20,9 @@
 <link rel="import" href="../triplat-datetime-picker/triplat-datetime-picker.html">
 <link rel="import" href="../triplat-select-input/triplat-select-input.html">
 <link rel="import" href="../triplat-graphic/triplat-graphic.html">
+<link rel="import" href="../triplat-graphic-legend/triplat-graphic-legend.html">
+
+<link rel="import" href="../triplat-graphic-pin/triplat-graphic-pin.html">
 <link rel="import" href="../triplat-note/triplat-note.html">
 <link rel="import" href="../triblock-scroll-container/triblock-scroll-container.html">
 <link rel="import" href="../iron-dropdown/iron-dropdown.html">
@@ -61,8 +64,8 @@
 
 		<style>
 			triplat-graphic {
-				height:350px;
-				width:350px;
+				height:500px;
+				width:900px;
 				display: block;
 			}
 		</style>
@@ -73,8 +76,8 @@
 		<triplat-route id="watsonRoute" name="watson" path="/watson"></triplat-route>
 
 		<triblock-app-layout
-			app-label="Building Insights Dashboard"
-			mobile-page-label="Building Insights Dashboard"
+			app-label="Indoor Positioning TRIRIGA"
+			mobile-page-label="Indoor Positioning TRIRIGA"
 			show-mobile-back-button>
 
 			<!-- Enable to customize app-title -->
@@ -86,7 +89,7 @@
 			<!-- <paper-listbox multi>
 				<paper-item value="{{ajaxBuildings}}"</paper-item>
 			<paper-listbox> -->
-			<paper-checkbox checked> Mock Data</paper-checkbox>
+			<!-- <paper-checkbox checked> Mock Data</paper-checkbox> -->
 
 			<triblock-banner-button tap-handler="_navigateToHome" home></triblock-banner-button>
 			<triblock-banner-button tap-handler="_navigateBack" back></triblock-banner-button>
@@ -104,6 +107,21 @@
 							<span><p> Building Insights Dashboard </p></span>
 							<!-- <triplat-graphic record-id="{{floor._id}}"></triplat-graphic> -->
 
+							<!-- <triplat-ds id="allBuildingsDs" name="allBuildings" data="{{_allBuildings}}">
+								<triplat-query>
+									<triplat-query-scroll-page scroller="{{_buildingScroller}}" size="50"></triplat-query-scroll-page>
+									<triplat-query-filter name="name" operator="contains" value="{{_buildingSearchValue}}" ignore-if-blank=""></triplat-query-filter>
+								</triplat-query>
+							</triplat-ds>
+
+							<triplat-ds id="allFloorsDs" name="allFloors" filtered-data="{{_allFloors}}">
+								<triplat-ds-context name="allBuildings" context-id="{{building.id}}"></triplat-ds-context>
+								<triplat-query>
+									<triplat-query-filter name="floorName" operator="contains" value="{{_floorSearchValue}}" ignore-if-blank=""></triplat-query-filter>
+								</triplat-query>
+							</triplat-ds> -->
+
+
 							 <paper-listbox selected="0" style="width:920">
 								 <paper-item> North America - Atlanta Office</paper-item>
 							   <paper-item> 02-Second Floor</paper-item>
@@ -116,10 +134,62 @@
 							</br>
 
 							<span>
-								<!-- <p>drawingidloading "{{drawingIdLoading}}"</p> -->
-								<!-- <p>hasgraphic "{{hasGraphic}}"</p> -->
-								<triplat-graphic record-id="1000291" drawing-id-loading="{{drawingIdLoading}}" has-graphic="{{hasGraphic}}">></triplat-graphic>
-								<!-- <triplat-graphic drawing-id=14006564></triplat-graphic> -->
+								<!-- <triplat-graphic record-id="13074775" drawing-id-loading="{{drawingIdLoading}}" has-graphic="{{hasGraphic}}">></triplat-graphic> -->
+								<!-- <triplat-graphic drawing-id="1340"> -->
+								<!-- <triplat-graphic drawing-id="1267"> -->
+
+								<!-- <p>This floor is currently 55% full, and is expected to increas</p> -->
+								<p>Current Capacity: 55%</p>
+								<p>Expected to decrease to 45% over the next few hours</p>
+
+								<triplat-graphic-legend spaces="[[allSpaces]]" legend-spaces="{{legendSpaces}}">
+										<triplat-graphic-legend-show-by attribute="spaceClass" color-by="ClassColor" label="Space Class">
+										</triplat-graphic-legend-show-by>
+								</triplat-graphic-legend>
+
+								<triplat-graphic-legend spaces="[[allSpaces]]" legend-spaces="{{_legendSpaces}}" show-by-selected="[[_legendLabel.roomType]]" opened="">
+									<triplat-graphic-legend-show-by id="graphicLegendShowBy" attribute="roomType" color-by="roomTypeColor" label="[[_legendLabel.roomType]]" opacity="1" readonly-criterion="" show-all-checked="">
+									</triplat-graphic-legend-show-by>
+								</triplat-graphic-legend>
+
+								<paper-button id="refreshMarkers" style="width:100px;margin-bottom:50px" raised>Refresh Floor Map</paper-button>
+
+								<triplat-graphic record-id="13117341" drawing-id-loading="{{drawingIdLoading}}" style="background:white;border-radius: 25px;" has-graphic="{{hasGraphic}}">
+									<triplat-graphic-zoomable></triplat-graphic-zoomable>
+
+									<triplat-graphic-highlight-group legend-spaces="[[legendSpaces]]">
+							    </triplat-graphic-highlight-group>
+
+
+									<!-- <triplat-graphic-label label-id="{{spaceLabelStyleId}}"></triplat-graphic-label> -->
+									<!-- <triplat-graphic-highlight highlighted="[[_highlightSpace]]"></triplat-graphic-highlight> -->
+									<triplat-graphic-highlight highlighted="[[_highlightSpace]]"></triplat-graphic-highlight>
+
+
+									<!-- <triplat-graphic-pin icon="[[pinName]]" pins="[[pinDetails]]" record-id-attr-name="spaceRecordId"></triplat-graphic-pin> -->
+
+									<!-- <triplat-graphic-selectable selectable="{{allSpaces}}" selected="{{selectedSpaces}}" multi="">
+					    		</triplat-graphic-selectable> -->
+
+
+
+									<triplat-graphic-pin icon="pin-person" pins='{"floorId": "13117341", "roomName": "02-AR08", "SpaceID": "02-AR08", "spaceId": "02-AR08", "SpaceName": "RM 02-AR08", "Name": "You are here", "_id": "13117396"}' record-id-attr-lame="SpaceID" label-attr-name="Name" space-attr-name="SpaceName">
+									<!-- <triplat-graphic-pin icon="pin-person" pins='{spaceClass: "Restroom", occupancyStatus: "Vacant Common", _id: "13117406", id: "02-AD03"}' record-id-attr-lame="SpaceID" label-attr-name="Name" space-attr-name="SpaceName"> -->
+	                </triplat-graphic-pin>
+
+									<!-- <triplat-graphic-pin icon="pin-person" pins="[[pins]]" record-id-attr-lame="SpaceID" label-attr-name="Name" space-attr-name="SpaceName">
+	                </triplat-graphic-pin> -->
+
+
+
+
+									<!-- <triplat-graphic-pin icon="pin-person" pins="[[peopleList]]" record-id-attr-lame="SpaceID" label-attr-name="Name" space-attr-name="SpaceName">
+	                </triplat-graphic-pin> -->
+
+
+									<!-- <triplat-graphic-highlight highlighted="[[_highlightSpace]]"></triplat-graphic-highlight> -->
+	                <!-- <triplat-graphic-label id="graphicLabel" label-id="[[spaceLabelStyles.0._id]]"></triplat-graphic-label> -->
+								</triplat-graphic>
 							</span>
 
 							<span>
@@ -147,6 +217,12 @@
 							 <!-- <triplat-ds id="triPeople" name="triPeople" data="{{triPeople}}"></triplat-ds> -->
 							 <triplat-ds id="occupancy" name="occupancy" data="{{triOccupancy}}"></triplat-ds>
 							 <triplat-ds id="space" name="space" data="{{triSpace}}"></triplat-ds>
+							 <triplat-ds id="build" name="allBuildings" data="{{allBuildings}}"></triplat-ds>
+							 <!-- <triplat-ds id="allbuildings" name="allbuildings" data="{{tutBuildings}}"></triplat-ds> -->
+							 <!-- <triplat-ds id="tribuildings" name="buildings" data="{{tribuildings}}"></triplat-ds> -->
+
+							 <!-- triplat-ds not working entirely -->
+							 <!-- TODO, import data directly using iron request -->
 							</span>
 
 							<!-- <span>
@@ -179,7 +255,6 @@
 										<triblock-table-column title="Percentage" property="Percentage"></triblock-table-column>
 										<triblock-table-column title="Prediction (Next hour)" property="Prediction"></triblock-table-column>
 							</triblock-table>
-
 
 							<!-- <triblock-table id="tablePeople"  title="Occupancy Stats" data="{{triPeople}}" style="width:100%; height:500px;">
 								    <triblock-table-column title="First Name" property="triNameTX"></triblock-table-column>
@@ -280,17 +355,24 @@
 					 </google-map> -->
 
 
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/weather" handle-as="json" last-response="{{weatherData}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/weather" handle-as="json" last-response="{{weatherData}}"></iron-ajax>
 
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/sample/pie" handle-as="json" last-response="{{ajaxData}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/sample/oe" handle-as="json" last-response="{{ajaxOEData}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/sample/line" handle-as="json" last-response="{{ajaxLineData}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/buildings" handle-as="json" last-response="{{ajaxBuildings}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/sample/occupancy" handle-as="json" last-response="{{ajaxSampleOccupancy}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/sample/table" handle-as="json" last-response="{{ajaxSampleTable}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/sample/detailed" handle-as="json" last-response="{{ajaxSingleBuilding}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/buildings/coords" handle-as="json" last-response="{{buildingCoords}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/occupancy" handle-as="json" last-response="{{occupancy}}"></iron-ajax>
+						<!-- <iron-ajax auto url="http://a2fa4188.ngrok.io/sample/pie" handle-as="json" last-response="{{ajaxData}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/sample/oe" handle-as="json" last-response="{{ajaxOEData}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/sample/line" handle-as="json" last-response="{{ajaxLineData}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/buildings" handle-as="json" last-response="{{ajaxBuildings}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/sample/occupancy" handle-as="json" last-response="{{ajaxSampleOccupancy}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/sample/table" handle-as="json" last-response="{{ajaxSampleTable}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/sample/detailed" handle-as="json" last-response="{{ajaxSingleBuilding}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/buildings/coords" handle-as="json" last-response="{{buildingCoords}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/occupancy" handle-as="json" last-response="{{occupancy}}"></iron-ajax> -->
+
+
+						<iron-ajax auto url="http://{{tririga_ip}}:8001/tririga/p/webapi/rest/v2/triSpaceAssessment/-1/allBuildings?countOnly=false&query=true" handle-as="json" last-response="{{allBuildings}}"></iron-ajax>
+						<iron-ajax auto url="http://{{tririga_ip}}:8001/tririga/p/webapi/rest/v2/triSpaceAssessment/-1/allBuildings/10336477/allFloors?countOnly=false" handle-as="json" last-response="{{allFloors}}"></iron-ajax>
+						<iron-ajax auto url="http://{{tririga_ip}}:8001/tririga/p/webapi/rest/v2/triSpaceAssessment/-1/allPeople?countOnly=false&query=true" handle-as="json" last-response="{{allPeople}}"></iron-ajax>
+						<iron-ajax auto url="http://{{tririga_ip}}:8001/tririga/p/webapi/rest/v2/triSpaceAssessment/-1/allBuildings/10336477/allFloors/13117341/allSpaces?countOnly=false" handle-as="json" last-response="{{allSpaces}}"></iron-ajax>
+
 
 
 					</section>
@@ -343,10 +425,10 @@ src="http://orcommunitycolleges.maps.arcgis.com/apps/webappviewer/index.html?id=
 							</paper-listbox>
 						</paper-dropdown-menu>
 
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/cache.json" handle-as="json" last-response="{{cache}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/cachepriorities" handle-as="json" last-response="{{cachePriorities}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/buildings" handle-as="json" last-response="{{ajaxBuildings}}"></iron-ajax>
-						<iron-ajax auto url="http://17eb7a89.ngrok.io/cardtest" handle-as="json" last-response="{{cardTestData}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/cache.json" handle-as="json" last-response="{{cache}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/cachepriorities" handle-as="json" last-response="{{cachePriorities}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/buildings" handle-as="json" last-response="{{ajaxBuildings}}"></iron-ajax>
+						<iron-ajax auto url="http://a2fa4188.ngrok.io/cardtest" handle-as="json" last-response="{{cardTestData}}"></iron-ajax>
 
 						<!-- <span> -->
 						<!-- TODO, use array selector? -->
@@ -466,6 +548,7 @@ src="http://orcommunitycolleges.maps.arcgis.com/apps/webappviewer/index.html?id=
 						type: Object,
 						value: function() { return {}; }
 				},
+				pins: Object,
 				user: String,
 				pass: String,
 				selected: {
@@ -499,7 +582,9 @@ src="http://orcommunitycolleges.maps.arcgis.com/apps/webappviewer/index.html?id=
 
 		// TODO test and replace ngrok ips with this var
 		// server: "ngrok / kubernetes ip + port"
-		server: "http://17eb7a89.ngrok.io",
+		server: "http://a2fa4188.ngrok.io",
+		// pins: {FloorId: "13117341", Name: "foo", SpaceID: "02-AR08", SpaceName: "space", _id: "pin1"},
+		pins: {floorId: "13117341", roomName: "02-AR08", SpaceID: "02-AR08", SpaceName: "02-AR08", _id: "13117396"},
 
 		_itemSelected : function(e) {
 			var selectedItem = e.target.selectedItem;
