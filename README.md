@@ -28,16 +28,19 @@ The project dependencies (Polymer, Web Components, UX Framework) are all pre-ins
 
 <!--Optionally, add flow steps based on the architecture diagram-->
 ## Flow
-1. Perceptive app pulls Floor Plan(s) from TRIRIGA, and data from Weather Company API.
-2. Mobile device periodically measures signal strength of all WiFi endpoints in the area, and forwards measurements to indoor positioning system (Raspberry Pis)
-3. Mobile device position is estimated, and location is updated in Cloudant and then rendered on Floor Plan
+1. User mobile devices periodically measures signal strength of all WiFi endpoints in the area, and forwards measurements to indoor positioning system (Raspberry Pis)
+2. Indoor positioning system processes measurements to determine mobile device location.
+3. Mobile device location is updated in Cloudant.
+4. User loads TRIRIGA Perceptive app.
+5. Perceptive app queries Weather Company API, building floor plan from TRIRIGA, and Location Data from Cloudant. Located devices are marked on the frontend floor plan.
+
 <!-- 2. Node.js backend requests updated dataset from BI APIs every hour, and persists values into a Cloudant database. This allows for us to build a chronological hourly dataset which can be used to create custom analytics models/graphics.
 3. Node.js backend transforms data into required format for charts/graphs.
 4. Custom TRIRIGA app pulls formatted sensor data from Node.js backend, and renders graphics and tables. -->
 
 <!-- ![Architecture](/images/arch.png) -->
 <p align="center">
-<img src="https://i.imgur.com/Rg0zgOA.png"/>
+<img src="https://i.imgur.com/bYrJwZC.png"/>
 </p>
 
 <!-- <p align="center">
