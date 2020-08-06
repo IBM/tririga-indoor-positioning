@@ -1,0 +1,17 @@
+[
+  "/v1/building/allpriorities",
+  "/v1/building/data/outage/top",
+  "/v1/building/energy/comparison/top",
+  "/v1/building/energy/usage/top",
+  "/v1/building/energy/wastage/top",
+  "/v1/building/unusual/usage/top",
+  "/v1/building/weather",
+  "/v1/building/data/outage",
+  "/v1/building/energy/comparison",
+  "/v1/building/energy/prediction",
+  "/v1/building/energy/usage",
+  "/v1/building/energy/wastage",
+  "/v1/building/unusual/hours",
+  "/v1/dtl/floors",
+  "/v1/ui/building/coords"
+]

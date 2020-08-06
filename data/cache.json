@@ -1,0 +1,2974 @@
+{
+  "_id": "26d2b26a80d121acdeb16c6041d7fc1c",
+  "_rev": "1-2f15526883ffdd50ea824f68482aed3c",
+  "payload": {
+    "/v1/estate/anomalies": {
+      "marker": [
+        {
+          "id": "B707",
+          "location": [
+            41.65987117,
+            -73.9389003
+          ],
+          "label": "B707",
+          "priority": "unknown",
+          "anomalous_hours": 0
+        },
+        {
+          "id": "B705",
+          "location": [
+            41.65102,
+            -73.93259
+          ],
+          "label": "B705",
+          "priority": "unknown",
+          "anomalous_hours": 0
+        },
+        {
+          "id": "B706",
+          "location": [
+            41.655684,
+            -73.937963
+          ],
+          "label": "B706",
+          "priority": "unknown",
+          "anomalous_hours": 0
+        },
+        {
+          "id": "B052",
+          "location": [
+            41.65607742,
+            -73.93965132
+          ],
+          "label": "B052",
+          "priority": "unknown",
+          "anomalous_hours": 0
+        },
+        {
+          "id": "B008",
+          "location": [
+            41.657238,
+            -73.935661
+          ],
+          "label": "B008",
+          "priority": "unknown",
+          "anomalous_hours": 0
+        },
+        {
+          "id": "EGLC",
+          "location": [
+            12.95226468,
+            77.64390053
+          ],
+          "label": "EGLC",
+          "priority": "unknown",
+          "anomalous_hours": 0
+        },
+        {
+          "id": "EGLD",
+          "location": [
+            12.95155368,
+            77.64324653
+          ],
+          "label": "EGLD",
+          "priority": "unknown",
+          "anomalous_hours": 0
+        }
+      ],
+      "count": {
+        "high": 0,
+        "medium": 0,
+        "all": 7
+      }
+    },
+    "/v1/estate/data/outage": {
+      "value": 0
+    },
+    "/v1/estate/data/quality": [
+      []
+    ],
+    "/v1/estate/energy/prediction": {
+      "value": 64,
+      "unit": "MWh",
+      "trend": "DOWN",
+      "trend_status": "GREEN",
+      "last_value": 151,
+      "last_unit": "MWh"
+    },
+    "/v1/estate/energy/usage": {
+      "value": 1.33,
+      "unit": "GWh",
+      "compare_percent": 195,
+      "trend": "UP",
+      "trend_status": "RED"
+    },
+    "/v1/estate/energy/wastage": {
+      "value": 30.3,
+      "unit": "MWh",
+      "usage_percent": 2.27
+    },
+    "/v1/estate/energy/usage/top": [
+      {
+        "building": "B052",
+        "usage": 519.3,
+        "unit": "MWh",
+        "usage_percent": 39
+      },
+      {
+        "building": "B706",
+        "usage": 302.15,
+        "unit": "MWh",
+        "usage_percent": 22.7
+      },
+      {
+        "building": "B008",
+        "usage": 287.75,
+        "unit": "MWh",
+        "usage_percent": 21.6
+      },
+      {
+        "building": "B707",
+        "usage": 112.76,
+        "unit": "MWh",
+        "usage_percent": 8.47
+      },
+      {
+        "building": "B705",
+        "usage": 100.44,
+        "unit": "MWh",
+        "usage_percent": 7.54
+      },
+      {
+        "building": "EGLD",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      },
+      {
+        "building": "EGLC",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/estate/energy/wastage/top": [
+      {
+        "wastage": 131.4,
+        "unit": "MWh",
+        "usage_percent": 9.87,
+        "building": "B052"
+      },
+      {
+        "wastage": 76.26,
+        "unit": "MWh",
+        "usage_percent": 5.73,
+        "building": "B706"
+      },
+      {
+        "wastage": 29.63,
+        "unit": "MWh",
+        "usage_percent": 2.23,
+        "building": "B008"
+      },
+      {
+        "wastage": 26.91,
+        "unit": "MWh",
+        "usage_percent": 2.02,
+        "building": "B707"
+      },
+      {
+        "wastage": 22.66,
+        "unit": "MWh",
+        "usage_percent": 1.7,
+        "building": "B705"
+      },
+      {
+        "wastage": 167,
+        "unit": "kWh",
+        "usage_percent": 0.01,
+        "building": "EGLC"
+      },
+      {
+        "wastage": 5,
+        "unit": "kWh",
+        "usage_percent": 0,
+        "building": "EGLD"
+      }
+    ],
+    "/v1/building/allpriorities/B008": {},
+    "/v1/building/data/outage/top/B008": [
+      {
+        "meter": "EM_POKB008LC18_evt_value",
+        "outage": 100
+      },
+      {
+        "meter": "EM_POKB008LC19_evt_value",
+        "outage": 100
+      },
+      {
+        "meter": "EM_POKB008LC88_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB008LC91_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB008LC90_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB008LC89_evt_value",
+        "outage": 0
+      }
+    ],
+    "/v1/building/energy/comparison/top/B008": {
+      "Month": [
+        "2018-01-01",
+        "2018-02-01",
+        "2018-03-01",
+        "2018-04-01",
+        "2018-05-01",
+        "2018-06-01",
+        "2018-07-01",
+        "2018-08-01",
+        "2018-09-01",
+        "2018-10-01",
+        "2018-11-01",
+        "2018-12-01",
+        "2019-01-01"
+      ],
+      "B008": [
+        3067,
+        120118,
+        130000,
+        130506,
+        130774,
+        121521,
+        129580,
+        0,
+        0,
+        0,
+        245094,
+        268937,
+        287750
+      ],
+      "Enterprise Average": [
+        1240,
+        67901,
+        74278,
+        71878,
+        75661,
+        78692,
+        72819,
+        0,
+        0,
+        0,
+        158198,
+        181108,
+        190175
+      ]
+    },
+    "/v1/building/energy/usage/top/B008": [
+      {
+        "meter": "EM_POKB008LC90_evt_value",
+        "usage": 88.01,
+        "unit": "MWh",
+        "usage_percent": 30.6
+      },
+      {
+        "meter": "EM_POKB008LC91_evt_value",
+        "usage": 76.72,
+        "unit": "MWh",
+        "usage_percent": 26.7
+      },
+      {
+        "meter": "EM_POKB008LC88_evt_value",
+        "usage": 75.44,
+        "unit": "MWh",
+        "usage_percent": 26.2
+      },
+      {
+        "meter": "EM_POKB008LC89_evt_value",
+        "usage": 33,
+        "unit": "kWh",
+        "usage_percent": 0.01
+      },
+      {
+        "meter": "EM_POKB008LC18_evt_value",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      },
+      {
+        "meter": "EM_POKB008LC19_evt_value",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/building/energy/wastage/top/B008": [
+      {
+        "meter": "EM_POKB008LC90_evt_value",
+        "wastage": 51.76,
+        "unit": "MWh",
+        "usage_percent": 18
+      },
+      {
+        "meter": "EM_POKB008LC91_evt_value",
+        "wastage": 45.12,
+        "unit": "MWh",
+        "usage_percent": 15.7
+      },
+      {
+        "meter": "EM_POKB008LC88_evt_value",
+        "wastage": 43.83,
+        "unit": "MWh",
+        "usage_percent": 15.2
+      },
+      {
+        "meter": "EM_POKB008LC89_evt_value",
+        "wastage": 24.53,
+        "unit": "MWh",
+        "usage_percent": 8.52
+      },
+      {
+        "meter": "EM_POKB008LC18_evt_value",
+        "wastage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      },
+      {
+        "meter": "EM_POKB008LC19_evt_value",
+        "wastage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/building/unusual/usage/top/B008": {
+      "EM_POKB008LC88_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB008LC89_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB008LC90_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB008LC91_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ]
+    },
+    "/v1/building/weather/B008": {
+      "temperature": {
+        "value": 13,
+        "unit": "F"
+      },
+      "humidity": {
+        "value": 35,
+        "unit": "%"
+      }
+    },
+    "/v1/building/data/outage/B008": {
+      "value": 0
+    },
+    "/v1/building/energy/comparison/B008": {
+      "buildingValue": 288,
+      "enterprisesValue": 190,
+      "unit": "MWh"
+    },
+    "/v1/building/energy/prediction/B008": {
+      "value": 16.2,
+      "unit": "MWh",
+      "trend": "DOWN",
+      "trend_status": "GREEN",
+      "last_value": 33.1,
+      "last_unit": "MWh"
+    },
+    "/v1/building/energy/usage/B008": {
+      "value": 288,
+      "unit": "MWh",
+      "compare_percent": 100,
+      "trend": "UP",
+      "trend_status": "RED"
+    },
+    "/v1/building/energy/wastage/B008": {
+      "value": 29.6,
+      "unit": "MWh",
+      "usage_percent": 10.3
+    },
+    "/v1/building/unusual/hours/B008": {
+      "value": 0,
+      "unit": "Hours"
+    },
+    "/v1/dtl/floors/B008": [],
+    "/v1/building/allpriorities/EGLD": {
+      "rows": [
+        {
+          "date": "2018-11-13",
+          "priorities": "Very_Low consumption in EGLD_MAINMETER",
+          "id": "row1",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-11",
+          "priorities": "Very_Low consumption in EGLD_MAINMETER",
+          "id": "row2",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-10",
+          "priorities": "Very_Low consumption in EGLD_MAINMETER",
+          "id": "row3",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-12",
+          "priorities": "Very_Low consumption in EGLD_MAINMETER",
+          "id": "row4",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-09",
+          "priorities": "Very_Low consumption in EGLD_MAINMETER",
+          "id": "row5",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-08",
+          "priorities": "Very_Low consumption in EGLD_MAINMETER",
+          "id": "row6",
+          "time": "00:00:00"
+        }
+      ],
+      "rowdetails": {
+        "row1": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLD_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU2_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU1_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 6 days"
+        },
+        "row6": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLD_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU2_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU1_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 1 days"
+        },
+        "row3": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLD_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU2_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU1_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 3 days"
+        },
+        "row2": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLD_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU2_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU1_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 4 days"
+        },
+        "row5": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLD_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU2_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU1_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 2 days"
+        },
+        "row4": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLD_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU2_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLDF1AHU1_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 5 days"
+        }
+      }
+    },
+    "/v1/building/data/outage/top/EGLD": [
+      {
+        "meter": "EM_EGLDF1AHU2_evt_value",
+        "outage": 100
+      },
+      {
+        "meter": "EM_EGLDF1AHU1_evt_value",
+        "outage": 100
+      }
+    ],
+    "/v1/building/energy/comparison/top/EGLD": {
+      "Month": [
+        "2018-01-01",
+        "2018-02-01",
+        "2018-03-01",
+        "2018-04-01",
+        "2018-05-01",
+        "2018-06-01",
+        "2018-07-01",
+        "2018-08-01",
+        "2018-09-01",
+        "2018-10-01",
+        "2018-11-01",
+        "2018-12-01",
+        "2019-01-01"
+      ],
+      "EGLD": [
+        11377,
+        11188,
+        14401,
+        17542,
+        10342,
+        8446,
+        4673,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Enterprise Average": [
+        1240,
+        67901,
+        74278,
+        71878,
+        75661,
+        78692,
+        72819,
+        0,
+        0,
+        0,
+        158198,
+        181108,
+        190175
+      ]
+    },
+    "/v1/building/energy/usage/top/EGLD": [
+      {
+        "meter": "EM_EGLDF1AHU1_evt_value",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      },
+      {
+        "meter": "EM_EGLDF1AHU2_evt_value",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/building/energy/wastage/top/EGLD": [
+      {
+        "meter": "EM_EGLDF1AHU1_evt_value",
+        "wastage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      },
+      {
+        "meter": "EM_EGLDF1AHU2_evt_value",
+        "wastage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/building/unusual/usage/top/EGLD": {
+      "EM_EGLDF1AHU2_evt_value": [
+        {
+          "date": "2018-11-08",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-09",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-10",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-11",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-12",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-13",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-14",
+          "intensity": 3
+        }
+      ],
+      "EM_EGLDF1AHU1_evt_value": [
+        {
+          "date": "2018-11-08",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-09",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-10",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-11",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-12",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-13",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-14",
+          "intensity": 3
+        }
+      ]
+    },
+    "/v1/building/weather/EGLD": {
+      "temperature": {
+        "value": 66,
+        "unit": "F"
+      },
+      "humidity": {
+        "value": 76,
+        "unit": "%"
+      }
+    },
+    "/v1/building/data/outage/EGLD": {
+      "value": 100
+    },
+    "/v1/building/energy/comparison/EGLD": {
+      "buildingValue": 0,
+      "enterprisesValue": 190176,
+      "unit": "kWh"
+    },
+    "/v1/building/energy/prediction/EGLD": {
+      "value": 627,
+      "unit": "kWh",
+      "trend": "UP",
+      "trend_status": "RED",
+      "last_value": 0,
+      "last_unit": "kWh"
+    },
+    "/v1/building/energy/usage/EGLD": {
+      "value": 0,
+      "unit": "kWh",
+      "compare_percent": 100,
+      "trend": "DOWN",
+      "trend_status": "GREEN"
+    },
+    "/v1/building/energy/wastage/EGLD": {
+      "value": 5.5,
+      "unit": "kWh",
+      "usage_percent": 0
+    },
+    "/v1/building/unusual/hours/EGLD": {
+      "value": 13,
+      "unit": "Hours"
+    },
+    "/v1/dtl/floors/EGLD": [
+      "01"
+    ],
+    "/v1/building/allpriorities/B706": {
+      "rows": [
+        {
+          "date": "2019-01-28",
+          "priorities": "Very_High consumption in B706_MAINMETER",
+          "id": "row1",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2019-01-26",
+          "priorities": "Very_High consumption in B706_MAINMETER",
+          "id": "row2",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2019-01-30",
+          "priorities": "Very_High consumption in B706_MAINMETER",
+          "id": "row3",
+          "time": "00:00:00"
+        }
+      ],
+      "rowdetails": {
+        "row1": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "B706_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC53_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC26_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC27_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC35_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC54_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 4380,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 18224,
+              "target": 2
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 75328,
+              "target": 3
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 8052.5,
+              "target": 4
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 15486,
+              "target": 5
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 3 days"
+        },
+        "row3": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "B706_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC53_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC26_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC27_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC35_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC54_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 4380,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 18224,
+              "target": 2
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 75328,
+              "target": 3
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 8052.5,
+              "target": 4
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 15486,
+              "target": 5
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 5 days"
+        },
+        "row2": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "B706_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC53_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC26_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC27_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC35_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB706LC54_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 4380,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 18224,
+              "target": 2
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 75328,
+              "target": 3
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 8052.5,
+              "target": 4
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 15486,
+              "target": 5
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 1 days"
+        }
+      }
+    },
+    "/v1/building/data/outage/top/B706": [
+      {
+        "meter": "EM_POKB706LC54_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB706LC27_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB706LC53_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB706LC35_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB706LC26_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB706LC52_evt_value",
+        "outage": 0
+      }
+    ],
+    "/v1/building/energy/comparison/top/B706": {
+      "Month": [
+        "2018-01-01",
+        "2018-02-01",
+        "2018-03-01",
+        "2018-04-01",
+        "2018-05-01",
+        "2018-06-01",
+        "2018-07-01",
+        "2018-08-01",
+        "2018-09-01",
+        "2018-10-01",
+        "2018-11-01",
+        "2018-12-01",
+        "2019-01-01"
+      ],
+      "B706": [
+        1671,
+        64026,
+        71730,
+        70544,
+        74290,
+        99969,
+        71856,
+        0,
+        0,
+        0,
+        238392,
+        287356,
+        302145
+      ],
+      "Enterprise Average": [
+        1240,
+        67901,
+        74278,
+        71878,
+        75661,
+        78692,
+        72819,
+        0,
+        0,
+        0,
+        158198,
+        181108,
+        190175
+      ]
+    },
+    "/v1/building/energy/usage/top/B706": [
+      {
+        "meter": "EM_POKB706LC27_evt_value",
+        "usage": 187.84,
+        "unit": "MWh",
+        "usage_percent": 62.2
+      },
+      {
+        "meter": "EM_POKB706LC26_evt_value",
+        "usage": 47.62,
+        "unit": "MWh",
+        "usage_percent": 15.8
+      },
+      {
+        "meter": "EM_POKB706LC54_evt_value",
+        "usage": 39.33,
+        "unit": "MWh",
+        "usage_percent": 13
+      },
+      {
+        "meter": "EM_POKB706LC35_evt_value",
+        "usage": 20.92,
+        "unit": "MWh",
+        "usage_percent": 6.92
+      },
+      {
+        "meter": "EM_POKB706LC53_evt_value",
+        "usage": 11.33,
+        "unit": "MWh",
+        "usage_percent": 3.75
+      },
+      {
+        "meter": "EM_POKB706LC52_evt_value",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/building/energy/wastage/top/B706": [
+      {
+        "meter": "EM_POKB706LC27_evt_value",
+        "wastage": 126.84,
+        "unit": "MWh",
+        "usage_percent": 42
+      },
+      {
+        "meter": "EM_POKB706LC26_evt_value",
+        "wastage": 25.17,
+        "unit": "MWh",
+        "usage_percent": 8.33
+      },
+      {
+        "meter": "EM_POKB706LC54_evt_value",
+        "wastage": 17.54,
+        "unit": "MWh",
+        "usage_percent": 5.8
+      },
+      {
+        "meter": "EM_POKB706LC35_evt_value",
+        "wastage": 12.88,
+        "unit": "MWh",
+        "usage_percent": 4.26
+      },
+      {
+        "meter": "EM_POKB706LC53_evt_value",
+        "wastage": 6.66,
+        "unit": "MWh",
+        "usage_percent": 2.2
+      },
+      {
+        "meter": "EM_POKB706LC52_evt_value",
+        "wastage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/building/unusual/usage/top/B706": {
+      "EM_POKB706LC52_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 3
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB706LC53_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB706LC26_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB706LC27_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB706LC35_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB706LC54_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ]
+    },
+    "/v1/building/weather/B706": {
+      "temperature": {
+        "value": 13,
+        "unit": "F"
+      },
+      "humidity": {
+        "value": 35,
+        "unit": "%"
+      }
+    },
+    "/v1/building/data/outage/B706": {
+      "value": 0
+    },
+    "/v1/building/energy/comparison/B706": {
+      "buildingValue": 302,
+      "enterprisesValue": 190,
+      "unit": "MWh"
+    },
+    "/v1/building/energy/prediction/B706": {
+      "value": 121,
+      "unit": "kWh",
+      "trend": "DOWN",
+      "trend_status": "GREEN",
+      "last_value": 34.5,
+      "last_unit": "MWh"
+    },
+    "/v1/building/energy/usage/B706": {
+      "value": 302,
+      "unit": "MWh",
+      "compare_percent": 100,
+      "trend": "UP",
+      "trend_status": "RED"
+    },
+    "/v1/building/energy/wastage/B706": {
+      "value": 76.3,
+      "unit": "MWh",
+      "usage_percent": 25.3
+    },
+    "/v1/building/unusual/hours/B706": {
+      "value": 1,
+      "unit": "Hours"
+    },
+    "/v1/dtl/floors/B706": [],
+    "/v1/building/allpriorities/EGLC": {
+      "rows": [
+        {
+          "date": "2018-11-13",
+          "priorities": "Very_Low consumption in EGLC_MAINMETER",
+          "id": "row1",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-11",
+          "priorities": "Very_Low consumption in EGLC_MAINMETER",
+          "id": "row2",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-12",
+          "priorities": "Very_Low consumption in EGLC_MAINMETER",
+          "id": "row3",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-09",
+          "priorities": "Very_Low consumption in EGLC_MAINMETER",
+          "id": "row4",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2018-11-08",
+          "priorities": "Very_Low consumption in EGLC_MAINMETER",
+          "id": "row5",
+          "time": "00:00:00"
+        }
+      ],
+      "rowdetails": {
+        "row1": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLC_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU1_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU2_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 6 days"
+        },
+        "row3": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLC_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU1_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU2_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 5 days"
+        },
+        "row2": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLC_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU1_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU2_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 4 days"
+        },
+        "row5": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLC_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU1_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU2_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 1 days"
+        },
+        "row4": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "EGLC_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU1_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_EGLCF1AHU2_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 0,
+              "target": 2
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 2 days"
+        }
+      }
+    },
+    "/v1/building/data/outage/top/EGLC": [
+      {
+        "meter": "EM_EGLCF1AHU1_evt_value",
+        "outage": 100
+      },
+      {
+        "meter": "EM_EGLCF1AHU2_evt_value",
+        "outage": 100
+      }
+    ],
+    "/v1/building/energy/comparison/top/EGLC": {
+      "Month": [
+        "2018-01-01",
+        "2018-02-01",
+        "2018-03-01",
+        "2018-04-01",
+        "2018-05-01",
+        "2018-06-01",
+        "2018-07-01",
+        "2018-08-01",
+        "2018-09-01",
+        "2018-10-01",
+        "2018-11-01",
+        "2018-12-01",
+        "2019-01-01"
+      ],
+      "EGLC": [
+        26064,
+        23212,
+        28651,
+        27125,
+        27251,
+        26017,
+        14826,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "Enterprise Average": [
+        1240,
+        67901,
+        74278,
+        71878,
+        75661,
+        78692,
+        72819,
+        0,
+        0,
+        0,
+        158198,
+        181108,
+        190175
+      ]
+    },
+    "/v1/building/energy/usage/top/EGLC": [
+      {
+        "meter": "EM_EGLCF1AHU1_evt_value",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      },
+      {
+        "meter": "EM_EGLCF1AHU2_evt_value",
+        "usage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/building/energy/wastage/top/EGLC": [
+      {
+        "meter": "EM_EGLCF1AHU1_evt_value",
+        "wastage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      },
+      {
+        "meter": "EM_EGLCF1AHU2_evt_value",
+        "wastage": 0,
+        "unit": "kWh",
+        "usage_percent": 0
+      }
+    ],
+    "/v1/building/unusual/usage/top/EGLC": {
+      "EM_EGLCF1AHU1_evt_value": [
+        {
+          "date": "2018-11-08",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-09",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-10",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-11",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-12",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-13",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-14",
+          "intensity": 3
+        }
+      ],
+      "EM_EGLCF1AHU2_evt_value": [
+        {
+          "date": "2018-11-08",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-09",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-10",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-11",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-12",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-13",
+          "intensity": 3
+        },
+        {
+          "date": "2018-11-14",
+          "intensity": 3
+        }
+      ]
+    },
+    "/v1/building/weather/EGLC": {
+      "temperature": {
+        "value": 66,
+        "unit": "F"
+      },
+      "humidity": {
+        "value": 76,
+        "unit": "%"
+      }
+    },
+    "/v1/building/data/outage/EGLC": {
+      "value": 100
+    },
+    "/v1/building/energy/comparison/EGLC": {
+      "buildingValue": 0,
+      "enterprisesValue": 190176,
+      "unit": "kWh"
+    },
+    "/v1/building/energy/prediction/EGLC": {
+      "value": 511,
+      "unit": "kWh",
+      "trend": "UP",
+      "trend_status": "RED",
+      "last_value": 0,
+      "last_unit": "kWh"
+    },
+    "/v1/building/energy/usage/EGLC": {
+      "value": 0,
+      "unit": "kWh",
+      "compare_percent": 100,
+      "trend": "DOWN",
+      "trend_status": "GREEN"
+    },
+    "/v1/building/energy/wastage/EGLC": {
+      "value": 167,
+      "unit": "kWh",
+      "usage_percent": 0
+    },
+    "/v1/building/unusual/hours/EGLC": {
+      "value": 14,
+      "unit": "Hours"
+    },
+    "/v1/dtl/floors/EGLC": [
+      "01"
+    ],
+    "/v1/building/allpriorities/B707": {},
+    "/v1/building/data/outage/top/B707": [
+      {
+        "meter": "EM_POKB707LC31_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB707LC29_evt_value",
+        "outage": 0
+      }
+    ],
+    "/v1/building/energy/comparison/top/B707": {
+      "Month": [
+        "2018-01-01",
+        "2018-02-01",
+        "2018-03-01",
+        "2018-04-01",
+        "2018-05-01",
+        "2018-06-01",
+        "2018-07-01",
+        "2018-08-01",
+        "2018-09-01",
+        "2018-10-01",
+        "2018-11-01",
+        "2018-12-01",
+        "2019-01-01"
+      ],
+      "B707": [
+        1105,
+        42369,
+        37935,
+        40585,
+        52453,
+        40590,
+        45409,
+        0,
+        0,
+        0,
+        76384,
+        75091,
+        78210
+      ],
+      "Enterprise Average": [
+        1240,
+        67901,
+        74278,
+        71878,
+        75661,
+        78692,
+        72819,
+        0,
+        0,
+        0,
+        158198,
+        181108,
+        190175
+      ]
+    },
+    "/v1/building/energy/usage/top/B707": [
+      {
+        "meter": "EM_POKB707LC29_evt_value",
+        "usage": 90.1,
+        "unit": "MWh",
+        "usage_percent": 79.9
+      },
+      {
+        "meter": "EM_POKB707LC31_evt_value",
+        "usage": 21.64,
+        "unit": "MWh",
+        "usage_percent": 19.2
+      }
+    ],
+    "/v1/building/energy/wastage/top/B707": [
+      {
+        "meter": "EM_POKB707LC29_evt_value",
+        "wastage": 40.74,
+        "unit": "MWh",
+        "usage_percent": 36.1
+      },
+      {
+        "meter": "EM_POKB707LC31_evt_value",
+        "wastage": 4.99,
+        "unit": "MWh",
+        "usage_percent": 4.43
+      }
+    ],
+    "/v1/building/unusual/usage/top/B707": {
+      "EM_POKB707LC31_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 3
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB707LC29_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 3
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ]
+    },
+    "/v1/building/weather/B707": {
+      "temperature": {
+        "value": 13,
+        "unit": "F"
+      },
+      "humidity": {
+        "value": 35,
+        "unit": "%"
+      }
+    },
+    "/v1/building/data/outage/B707": {
+      "value": 0
+    },
+    "/v1/building/energy/comparison/B707": {
+      "buildingValue": 113,
+      "enterprisesValue": 190,
+      "unit": "MWh"
+    },
+    "/v1/building/energy/prediction/B707": {
+      "value": 4.53,
+      "unit": "MWh",
+      "trend": "DOWN",
+      "trend_status": "GREEN",
+      "last_value": 12.9,
+      "last_unit": "MWh"
+    },
+    "/v1/building/energy/usage/B707": {
+      "value": 113,
+      "unit": "MWh",
+      "compare_percent": 100,
+      "trend": "UP",
+      "trend_status": "RED"
+    },
+    "/v1/building/energy/wastage/B707": {
+      "value": 26.9,
+      "unit": "MWh",
+      "usage_percent": 23.9
+    },
+    "/v1/building/unusual/hours/B707": {
+      "value": 0,
+      "unit": "Hours"
+    },
+    "/v1/dtl/floors/B707": [],
+    "/v1/building/allpriorities/B705": {},
+    "/v1/building/data/outage/top/B705": [
+      {
+        "meter": "EM_POKB705LC24_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB705LC25_evt_value",
+        "outage": 0
+      }
+    ],
+    "/v1/building/energy/comparison/top/B705": {
+      "Month": [
+        "2018-01-01",
+        "2018-02-01",
+        "2018-03-01",
+        "2018-04-01",
+        "2018-05-01",
+        "2018-06-01",
+        "2018-07-01",
+        "2018-08-01",
+        "2018-09-01",
+        "2018-10-01",
+        "2018-11-01",
+        "2018-12-01",
+        "2019-01-01"
+      ],
+      "B705": [
+        985,
+        40152,
+        43838,
+        42661,
+        42252,
+        42075,
+        43032,
+        0,
+        0,
+        0,
+        89748,
+        89916,
+        100436
+      ],
+      "Enterprise Average": [
+        4476,
+        48935,
+        52437,
+        52997,
+        52871,
+        63032,
+        65354,
+        0,
+        0,
+        0,
+        158198,
+        181108,
+        190175
+      ]
+    },
+    "/v1/building/energy/usage/top/B705": [
+      {
+        "meter": "EM_POKB705LC25_evt_value",
+        "usage": 73.46,
+        "unit": "MWh",
+        "usage_percent": 73.1
+      },
+      {
+        "meter": "EM_POKB705LC24_evt_value",
+        "usage": 26.97,
+        "unit": "MWh",
+        "usage_percent": 26.9
+      }
+    ],
+    "/v1/building/energy/wastage/top/B705": [
+      {
+        "meter": "EM_POKB705LC25_evt_value",
+        "wastage": 43.37,
+        "unit": "MWh",
+        "usage_percent": 43.2
+      },
+      {
+        "meter": "EM_POKB705LC24_evt_value",
+        "wastage": 12.09,
+        "unit": "MWh",
+        "usage_percent": 12
+      }
+    ],
+    "/v1/building/unusual/usage/top/B705": {
+      "EM_POKB705LC25_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB705LC24_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ]
+    },
+    "/v1/building/weather/B705": {
+      "temperature": {
+        "value": 13,
+        "unit": "F"
+      },
+      "humidity": {
+        "value": 34,
+        "unit": "%"
+      }
+    },
+    "/v1/building/data/outage/B705": {
+      "value": 0
+    },
+    "/v1/building/energy/comparison/B705": {
+      "buildingValue": 100,
+      "enterprisesValue": 190,
+      "unit": "MWh"
+    },
+    "/v1/building/energy/prediction/B705": {
+      "value": 5.31,
+      "unit": "MWh",
+      "trend": "DOWN",
+      "trend_status": "GREEN",
+      "last_value": 11.8,
+      "last_unit": "MWh"
+    },
+    "/v1/building/energy/usage/B705": {
+      "value": 100,
+      "unit": "MWh",
+      "compare_percent": 100,
+      "trend": "UP",
+      "trend_status": "RED"
+    },
+    "/v1/building/energy/wastage/B705": {
+      "value": 22.7,
+      "unit": "MWh",
+      "usage_percent": 22.6
+    },
+    "/v1/building/unusual/hours/B705": {
+      "value": 0,
+      "unit": "Hours"
+    },
+    "/v1/dtl/floors/B705": [],
+    "/v1/building/allpriorities/B052": {
+      "rows": [
+        {
+          "date": "2019-01-26",
+          "priorities": "Very_High consumption in B052_MAINMETER",
+          "id": "row1",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2019-01-30",
+          "priorities": "Very_High consumption in B052_MAINMETER",
+          "id": "row2",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2019-01-27",
+          "priorities": "Very_High consumption in B052_MAINMETER",
+          "id": "row3",
+          "time": "00:00:00"
+        },
+        {
+          "date": "2019-01-25",
+          "priorities": "Very_High consumption in B052_MAINMETER",
+          "id": "row4",
+          "time": "00:00:00"
+        }
+      ],
+      "rowdetails": {
+        "row1": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "B052_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC121_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC51_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC72_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 18181,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 4943.129999999886,
+              "target": 2
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 126.5,
+              "target": 3
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 2 days"
+        },
+        "row3": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "B052_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC121_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC51_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC72_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 18181,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 4943.129999999886,
+              "target": 2
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 126.5,
+              "target": 3
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 3 days"
+        },
+        "row2": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "B052_MAINMETER"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC121_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC51_evt_value"
+            },
+            {
+              "color": "#7742B6",
+              "name": "EM_POKB052LC72_evt_value"
+            }
+          ],
+          "link": [
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 18181,
+              "target": 1
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 4943.129999999886,
+              "target": 2
+            },
+            {
+              "color": "#BFA5DE",
+              "source": 0,
+              "opacity": 0.2,
+              "value": 126.5,
+              "target": 3
+            }
+          ],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 6 days"
+        },
+        "row4": {
+          "node": [
+            {
+              "color": "#7742B6",
+              "name": "B052_MAINMETER"
+            }
+          ],
+          "link": [],
+          "status": "high",
+          "desc": "Unusual consumption was detected for 1 days"
+        }
+      }
+    },
+    "/v1/building/data/outage/top/B052": [
+      {
+        "meter": "EM_POKB052LC72_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB052LC51_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB052LC121_evt_value",
+        "outage": 0
+      },
+      {
+        "meter": "EM_POKB052LC122_evt_value",
+        "outage": 0
+      }
+    ],
+    "/v1/building/energy/comparison/top/B052": {
+      "Month": [
+        "2018-01-01",
+        "2018-02-01",
+        "2018-03-01",
+        "2018-04-01",
+        "2018-05-01",
+        "2018-06-01",
+        "2018-07-01",
+        "2018-08-01",
+        "2018-09-01",
+        "2018-10-01",
+        "2018-11-01",
+        "2018-12-01",
+        "2019-01-01"
+      ],
+      "B052": [
+        2741,
+        167701,
+        185947,
+        172311,
+        204173,
+        213227,
+        206369,
+        0,
+        0,
+        0,
+        442450,
+        519526,
+        519304
+      ],
+      "Enterprise Average": [
+        1240,
+        67901,
+        74278,
+        71878,
+        75661,
+        78692,
+        72819,
+        0,
+        0,
+        0,
+        158198,
+        181108,
+        190175
+      ]
+    },
+    "/v1/building/energy/usage/top/B052": [
+      {
+        "meter": "EM_POKB052LC122_evt_value",
+        "usage": 212.53,
+        "unit": "MWh",
+        "usage_percent": 40.9
+      },
+      {
+        "meter": "EM_POKB052LC121_evt_value",
+        "usage": 45.72,
+        "unit": "MWh",
+        "usage_percent": 8.8
+      },
+      {
+        "meter": "EM_POKB052LC51_evt_value",
+        "usage": 13.25,
+        "unit": "MWh",
+        "usage_percent": 2.55
+      },
+      {
+        "meter": "EM_POKB052LC72_evt_value",
+        "usage": 127,
+        "unit": "kWh",
+        "usage_percent": 0.02
+      }
+    ],
+    "/v1/building/energy/wastage/top/B052": [
+      {
+        "meter": "EM_POKB052LC72_evt_value",
+        "wastage": 155.65,
+        "unit": "MWh",
+        "usage_percent": 30
+      },
+      {
+        "meter": "EM_POKB052LC122_evt_value",
+        "wastage": 120.98,
+        "unit": "MWh",
+        "usage_percent": 23.3
+      },
+      {
+        "meter": "EM_POKB052LC121_evt_value",
+        "wastage": 20.45,
+        "unit": "MWh",
+        "usage_percent": 3.94
+      },
+      {
+        "meter": "EM_POKB052LC51_evt_value",
+        "wastage": 8.05,
+        "unit": "MWh",
+        "usage_percent": 1.55
+      }
+    ],
+    "/v1/building/unusual/usage/top/B052": {
+      "EM_POKB052LC121_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 3
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB052LC51_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB052LC122_evt_value": [
+        {
+          "date": "2034-04-26",
+          "intensity": 3
+        }
+      ],
+      "EM_POKB052LC72_evt_value": [
+        {
+          "date": "2019-01-26",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-27",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-28",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-29",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-30",
+          "intensity": 5
+        },
+        {
+          "date": "2019-01-31",
+          "intensity": 5
+        },
+        {
+          "date": "2019-02-01",
+          "intensity": 3
+        }
+      ]
+    },
+    "/v1/building/weather/B052": {
+      "temperature": {
+        "value": 13,
+        "unit": "F"
+      },
+      "humidity": {
+        "value": 35,
+        "unit": "%"
+      }
+    },
+    "/v1/building/data/outage/B052": {
+      "value": 0
+    },
+    "/v1/building/energy/comparison/B052": {
+      "buildingValue": 519,
+      "enterprisesValue": 190,
+      "unit": "MWh"
+    },
+    "/v1/building/energy/prediction/B052": {
+      "value": 17.9,
+      "unit": "kWh",
+      "trend": "DOWN",
+      "trend_status": "GREEN",
+      "last_value": 58.4,
+      "last_unit": "MWh"
+    },
+    "/v1/building/energy/usage/B052": {
+      "value": 519,
+      "unit": "MWh",
+      "compare_percent": 100,
+      "trend": "UP",
+      "trend_status": "RED"
+    },
+    "/v1/building/energy/wastage/B052": {
+      "value": 131,
+      "unit": "MWh",
+      "usage_percent": 25.2
+    },
+    "/v1/building/unusual/hours/B052": {
+      "value": 17,
+      "unit": "Hours"
+    },
+    "/v1/dtl/floors/B052": [],
+    "/v1/ui/building/list": [
+      "B008",
+      "B052",
+      "B705",
+      "B706",
+      "B707",
+      "EGLC",
+      "EGLD"
+    ],
+    "/v1/ui/building/coords": {
+      "B707": {
+        "lat": 41.65987117,
+        "lon": -73.9389003,
+        "name": "B707",
+        "icon": "fa-building",
+        "iconColor": "green",
+        "layer": "B707",
+        "popup": "<p>Building B707</p>"
+      },
+      "B705": {
+        "lat": 41.65102,
+        "lon": -73.93259,
+        "name": "B705",
+        "icon": "fa-building",
+        "iconColor": "green",
+        "layer": "B705",
+        "popup": "<p>Building B705</p>"
+      },
+      "B706": {
+        "lat": 41.655684,
+        "lon": -73.937963,
+        "name": "B706",
+        "icon": "fa-building",
+        "iconColor": "green",
+        "layer": "B706",
+        "popup": "<p>Building B706</p>"
+      },
+      "B052": {
+        "lat": 41.65607742,
+        "lon": -73.93965132,
+        "name": "B052",
+        "icon": "fa-building",
+        "iconColor": "green",
+        "layer": "B052",
+        "popup": "<p>Building B052</p>"
+      },
+      "B008": {
+        "lat": 41.657238,
+        "lon": -73.935661,
+        "name": "B008",
+        "icon": "fa-building",
+        "iconColor": "green",
+        "layer": "B008",
+        "popup": "<p>Building B008</p>"
+      },
+      "EGLC": {
+        "lat": 12.95226468,
+        "lon": 77.64390053,
+        "name": "EGLC",
+        "icon": "fa-building",
+        "iconColor": "green",
+        "layer": "EGLC",
+        "popup": "<p>Building EGLC</p>"
+      },
+      "EGLD": {
+        "lat": 12.95155368,
+        "lon": 77.64324653,
+        "name": "EGLD",
+        "icon": "fa-building",
+        "iconColor": "green",
+        "layer": "EGLD",
+        "popup": "<p>Building EGLD</p>"
+      }
+    },
+    "/v1/ui/estate/sites": {
+      "Bengaluru, India": [
+        {
+          "display_name": "Bengaluru, Bangalore Urban, Karnataka, India",
+          "buildingID": "EGLC",
+          "lat": "12.9791198",
+          "lon": "77.5912997",
+          "boundingbox": [
+            "12.8340125",
+            "13.1436649",
+            "77.4601025",
+            "77.7840515"
+          ]
+        },
+        {
+          "display_name": "Bengaluru, Bangalore Urban, Karnataka, India",
+          "buildingID": "EGLD",
+          "lat": "12.9791198",
+          "lon": "77.5912997",
+          "boundingbox": [
+            "12.8340125",
+            "13.1436649",
+            "77.4601025",
+            "77.7840515"
+          ]
+        }
+      ],
+      "Town of Poughkeepsie, USA": [
+        {
+          "display_name": "Town of Poughkeepsie, Dutchess County, New York, USA",
+          "buildingID": "B008",
+          "lat": "41.65949",
+          "lon": "-73.9093995608254",
+          "boundingbox": [
+            "41.58179",
+            "41.737312",
+            "-73.954725",
+            "-73.839408"
+          ]
+        },
+        {
+          "display_name": "Town of Poughkeepsie, Dutchess County, New York, USA",
+          "buildingID": "B052",
+          "lat": "41.65949",
+          "lon": "-73.9093995608254",
+          "boundingbox": [
+            "41.58179",
+            "41.737312",
+            "-73.954725",
+            "-73.839408"
+          ]
+        },
+        {
+          "display_name": "Town of Poughkeepsie, Dutchess County, New York, USA",
+          "buildingID": "B705",
+          "lat": "41.65949",
+          "lon": "-73.9093995608254",
+          "boundingbox": [
+            "41.58179",
+            "41.737312",
+            "-73.954725",
+            "-73.839408"
+          ]
+        },
+        {
+          "display_name": "Town of Poughkeepsie, Dutchess County, New York, USA",
+          "buildingID": "B706",
+          "lat": "41.65949",
+          "lon": "-73.9093995608254",
+          "boundingbox": [
+            "41.58179",
+            "41.737312",
+            "-73.954725",
+            "-73.839408"
+          ]
+        },
+        {
+          "display_name": "Town of Poughkeepsie, Dutchess County, New York, USA",
+          "buildingID": "B707",
+          "lat": "41.65949",
+          "lon": "-73.9093995608254",
+          "boundingbox": [
+            "41.58179",
+            "41.737312",
+            "-73.954725",
+            "-73.839408"
+          ]
+        }
+      ]
+    },
+    "/v1/ui/building/sites": {
+      "EGLC": "Bengaluru, India",
+      "EGLD": "Bengaluru, India",
+      "B008": "Town of Poughkeepsie, USA",
+      "B052": "Town of Poughkeepsie, USA",
+      "B705": "Town of Poughkeepsie, USA",
+      "B706": "Town of Poughkeepsie, USA",
+      "B707": "Town of Poughkeepsie, USA"
+    },
+    "/v1/ui/building/rates": {
+      "B707": {
+        "rate": 0.0786
+      },
+      "B705": {
+        "rate": 0.0786
+      },
+      "B706": {
+        "rate": 0.0786
+      },
+      "B052": {
+        "rate": 0.0786
+      },
+      "B008": {
+        "rate": 0.0786
+      },
+      "EGLC": {
+        "rate": 0
+      },
+      "EGLD": {
+        "rate": 0
+      }
+    },
+    "/v1/ui/cache/createdAt": "Thu Jan 31 2019 18:16:46 GMT+0000 (UTC)",
+    "/v1/ui/cache/timestamp": 1548958606437,
+    "/v1/ui/cache/instanceVars": {
+      "loginURL": "https://iotbi217-agg.mybluemix.net/api/v1/user/activity/login",
+      "aggAPI": "https://iotbi217-agg.mybluemix.net/api",
+      "kittAPI": "https://iotbi217-KITT.mybluemix.net/api",
+      "loginUsername": "democore@us.ibm.com",
+      "loginPassword": "D670438BDBF449F992E67484CEDBC18A",
+      "WIOTPURL": "https://l0r3uh.internetofthings.ibmcloud.com",
+      "WIOTPAPIKey": "a-l0r3uh-bnb0rr908u",
+      "WIOTPAPIToken": "QRd7_2(oP(+9f_asM&"
+    },
+    "instanceID": "iotbi217"
+  }
+}

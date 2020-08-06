@@ -1,0 +1,9 @@
+[
+  "/v1/dtl/FootFallByHourEstate",
+  "/v1/dtl/FootFallByHourPopupEstate",
+  "/v1/dtl/FootFallPredictionEstate",
+  "/v1/dtl/FootFallPredictionPopupBuilding",
+  "/v1/dtl/FootFallByHourPopupBuilding",
+  "/v1/dtl/FootFallByFloor",
+  "/v1/dtl/FootFallByFloorDetailPerFloor"
+]

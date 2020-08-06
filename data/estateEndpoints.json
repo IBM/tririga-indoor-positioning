@@ -1,0 +1,10 @@
+[
+ "/v1/estate/anomalies",
+ "/v1/estate/data/outage",
+ "/v1/estate/data/quality",
+ "/v1/estate/energy/prediction",
+ "/v1/estate/energy/usage",
+ "/v1/estate/energy/wastage",
+ "/v1/estate/energy/usage/top",
+ "/v1/estate/energy/wastage/top"
+]
